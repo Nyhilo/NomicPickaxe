@@ -10,12 +10,96 @@
 
 <body>
     <header>
-        <button type="button">Option 1</button>
-        <button type="button">Option 2</button>
+        <button class="button btn-rules" onclick="setRules()">Rules</button>
+        <button class="button btn-player-roster" onclick="setPlayerRoster()">Player Roster</button>
+        <button class="button btn-changelog" onclick="setChangelog()">Changelog</button>
     </header>
     <main>
-        <section id="option1"><p>This is Option 1</p></section>
-        <section id="option2"><p>This is option 2</p></section>
+
+        <section id="rules">
+            <h2>Rules</h2>
+            <table>
+                <tr>
+                    <td class="immutable-rules">
+                        <h3>Immutable Rules</h3>
+                        <ol start="100">
+                            <li><span class="imrule">The name of this game is "The Official Microsoft Teams™ Nomic feat. Yavapai College"</span></li>
+                            <li><span class="imrule">All players must follow the rules</span></li>
+                            <li><span class="imrule">A rule change means: The enactment, reinstatement, repeal, or amendment of a mutable rule; or the transition of an mutable rule into na immutable rule and vice versa.</span></li>
+                            <li><span class="imrule">All suggested rule changes must be voted on by everyone</span></li>
+                            <li><span class="imrule">A rule change will be adopted if and only if it gets the correct number of votes</span></li>
+                            <li><span class="imrule">Rule changes happen as such:</span>
+                                <ul>
+                                    <li>Step 1)</li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li><span class="imrule"></span></li>
+                            <li><span class="imrule"></span></li>
+                            <li><span class="imrule"></span></li>
+                            <li><span class="imrule"></span></li>
+                            <li><span class="imrule"></span></li>
+                            <li><span class="imrule"></span></li>
+                            <li><span class="imrule"></span></li>
+                            <li><span class="imrule"></span></li>
+                        </ol>
+                    </td>
+                    <td class="mutable-rules">
+                        <h3>Mutable Rules</h3>
+                        <ol start="200">
+                            <li><span class="murule">The current Scribe is Jacob.</span></li>
+                            <li><span class="murule">Players shall alternate in alphabetical order, taking one whole turn apiece. Turns may not be skipped or passed, and parts of turns may not be omitted. All players begin with zero points.</span></li>
+                            <li><span class="murule"></span></li>
+                            <li><span class="murule"></span></li>
+                            <li><span class="murule"></span></li>
+                            <li><span class="murule"></span></li>
+                            <li><span class="murule"></span></li>
+                            <li><span class="murule"></span></li>
+                            <li><span class="murule"></span></li>
+                            <li><span class="murule"></span></li>
+                            <li><span class="murule"></span></li>
+                            <li><span class="murule"></span></li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="player-roster">
+            <h2>Player Roster</h2>
+        </section>
+
+        <section id="changelog">
+            <h2>Changelog</h2>
+        </section>
+
     </main>
 </body>
+    <script>
+        // Javascript for Nomic Pickaxe
+        var rules = document.getElementById('rules');
+        var playerRoster = document.getElementById('player-roster');
+        var changelog = document.getElementById('changelog');
+
+
+        function setRules() {
+            playerRoster.style.display = 'none';
+            changelog.style.display = 'none';
+            rules.style.display = 'block';
+        }
+
+        function setPlayerRoster() {
+            rules.style.display = 'none';
+            changelog.style.display = 'none';
+            playerRoster.style.display = 'block';
+        }
+
+        function setChangelog() {
+            console.log("cl");
+            playerRoster.style.display = 'none';
+            rules.style.display = 'none';
+            changelog.style.display = 'block';
+        }
+    </script>
 </html>

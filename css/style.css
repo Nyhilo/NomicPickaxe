@@ -9,7 +9,7 @@ body {
     overflow: hidden;*/
     font-family: 'Monofur', Arial, sans-serif;
 
-    margin-top: 1rem;
+    margin-top: 2rem;
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -24,28 +24,105 @@ header {
 }
 
 main {
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
 }
 
-
-.subtitle {
-    font-size: 1rem;
+h2 {
+    font-size: 200%;
+    text-decoration: underline;
 }
+
+h3 {
+    font-size: 150%;
+    margin: 0 0 1em 0;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem 0 1rem;
+    table-layout: fixed;
+}
+
+td {
+    vertical-align: top;
+}
+
+ol {
+    padding-left: 3.5rem;
+}
+
+li {
+    font-size: 100%;
+}
+
+.imrule {
+    color: #CA2518;
+}
+
+.murule {
+    color: #0A67BD;
+}
+
 
 /* Dynamic Webpaging */
 
-#option1 {
+#rules {
     display: block;
 }
 
-#option2 {
+#player-roster {
+    display: none;
+}
+
+#changelog {
     display: none;
 }
 
 
 
 /* Misc */
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+    color: #333;
+}
+
+.button {
+    background-color: #F7F5EF;
+    border: solid 1px #333;
+    border-radius: 4px;
+    color: #333;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+}
+
+/*.button:hover {
+    background-color: #333; 
+    color: #F7F5EF;
+}*/
+
+.button:active {
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+    background-color: #ddd;
+
+}
+
+.button:focus {
+    outline:0;
+}
+
 @font-face {
     font-family: "Monofur";
     src: url("../fonts/monof55.ttf");
