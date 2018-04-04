@@ -27,7 +27,7 @@ h1 {
     margin: 0;
 }
 
-.subtitle {
+p.subtitle {
     padding: 0 10%;
     font-size: 1rem;
     text-align: justify;
@@ -49,9 +49,23 @@ h3 {
     margin: 0 0 0 .5rem;
 }
 
+/* Dynamic Webpaging */
+
+section#rules {
+    display: none;
+}
+
+section#player-roster {
+    display: block;
+}
+
+section#changelog {
+    display: none;
+}
+
 
 /* Rules CSS */
-.immutable-rules, .mutable-rules{
+div.immutable-rules, div.mutable-rules{
     width: 50%;
     display: block;
     float: left;
@@ -75,28 +89,46 @@ ul.bulleted {
     list-style-type: circle;
 }
 
-.imrule {
+span.imrule {
     color: #CA2518;
 }
 
-.murule {
+span.murule {
     color: #0A67BD;
 }
 
-/* Dynamic Webpaging */
 
-#rules {
-    display: block;
+/* Player Roster CSS */
+
+div.active-players, div.inactive-players {
+    margin: 1rem 2rem;
+    display:block;
 }
 
-#player-roster {
-    display: none;
+div.player {
+    width: 15rem;
+    height: 3rem;
+    float: left;
 }
 
-#changelog {
-    display: none;
+h3.pagedown {
+    clear: both;
+    margin-top: 8rem;
 }
 
+span.name { font-size: 1.4rem; font-weight: bold; }
+
+span.status, span.value { line-height: 1.4rem; }
+
+span.status { padding-left: 1rem; }
+
+span.value { font-weight: bold; font-size: 120%; }
+
+span.isactive { color: green; }
+
+span.isinactive { color: blue; }
+
+span.islost { color: darkred; }
 
 
 /* Misc */
