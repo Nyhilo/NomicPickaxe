@@ -114,6 +114,11 @@ span.murule {
     color: #0A67BD;
 }
 
+.bulletpointed {
+    list-style-position: inside;
+/*    padding-left: 1.4rem;    
+*/}
+
 
 /* Player Roster CSS */
 
