@@ -87,6 +87,11 @@ ol {
     padding-left: 4rem;
 }
 
+section#rules div ol {
+    padding-left: 2rem;
+    list-style:none;
+}
+
 li {
     font-size: 100%;
     margin: .4rem 0;
@@ -153,17 +158,25 @@ div.log-container {
     margin: 0 auto;
 }
 
-@media (max-width: 46rem) { 
-    div.log-container {
-        width: 95%;
-        margin: 0 auto;
-    }
-}
 
 #changelog ol li ol {
     padding-left: 1.4rem;
 }
 
+@media (max-width: 46rem) { 
+    div.log-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    section#changelog div h3 {
+        margin-left: 0;
+    }
+
+    section#changelog div ol {
+        padding-left: 1.4rem;
+    }
+}
 
 /* Misc */
 
