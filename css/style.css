@@ -49,14 +49,18 @@ h3 {
     margin: 0 0 0 .5rem;
 }
 
+br {
+    line-height: 2rem;
+}
+
 /* Dynamic Webpaging */
 
 section#rules {
-    display: none;
+    display: block;
 }
 
 section#player-roster {
-    display: block;
+    display: none;
 }
 
 section#changelog {
@@ -71,13 +75,21 @@ div.immutable-rules, div.mutable-rules{
     float: left;
 }
 
+@media (max-width: 800px) { 
+    div.immutable-rules, div.mutable-rules{
+        width: 100%;
+        display: block;
+        /*float: left;*/
+    }
+}
+
 ol {
     padding-left: 4rem;
 }
 
 li {
     font-size: 100%;
-    margin-bottom: .4rem;
+    margin: .4rem 0;
 }
 
 ul {
@@ -109,16 +121,19 @@ div.player {
     width: 15rem;
     height: 3rem;
     float: left;
+    margin-bottom: 2em;
 }
 
 h3.pagedown {
     clear: both;
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
 
 span.name { font-size: 1.4rem; font-weight: bold; }
 
 span.status, span.value { line-height: 1.4rem; }
+
+div.player br { line-height: 1rem; }
 
 span.status { padding-left: 1rem; }
 
@@ -129,6 +144,25 @@ span.isactive { color: green; }
 span.isinactive { color: blue; }
 
 span.islost { color: darkred; }
+
+
+/* Changelog CSS */
+
+div.log-container {
+    width: 40rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 46rem) { 
+    div.log-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+#changelog ol li ol {
+    padding-left: 1.4rem;
+}
 
 
 /* Misc */
