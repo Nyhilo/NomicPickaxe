@@ -53,6 +53,12 @@ br {
     line-height: 2rem;
 }
 
+footer {
+    padding: 35vh 0 .5rem;
+    clear: both;
+
+}
+
 /* Dynamic Webpaging */
 
 section#rules {
