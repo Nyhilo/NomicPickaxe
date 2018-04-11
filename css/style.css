@@ -54,9 +54,14 @@ br {
 }
 
 footer {
-    padding: 35vh 0 .5rem;
+    padding-bottom: .25rem;
     clear: both;
 
+}
+
+pre {
+    text-align: center;
+    color: #F7F5EF;
 }
 
 /* Dynamic Webpaging */
