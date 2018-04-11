@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nomic Pickaxe</title>
+    <meta name="description" content="TBA."/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+    <header>
+        <h1>Nomic Pickaxe</h1>
+        <p class="subtitle">The NOMIC ice axe allows the entire rock climbing repertoire to be transferred to ice. Thanks to its adjustable ergonomic handle, it offers multiple grip modes and limits the risk of snagging when switching hands. The ICE pick allows easy penetration in any type of ice, and pulls out easily. The modular head has two removable pick weights to balance the axe and propel it into the ice with an exceptional swing. The NOMIC ice axe can also be equipped with a hammer for placing pitons.</p>
+        <a class="button btn-rules" href="index.html">Rules</a>
+        <a class="button btn-player-roster" href="#">Player Roster</a>
+        <a class="button btn-changelog" href="changelog.html">Changelog</a>
+    </header>
+    <main>
+        
+        <!-- Player Roster -->
+        <section id="player-roster">
+            <h2>Player Roster</h2>
+            
+            <h3>Current round: <span class="value">2</span></h3>
+            <br>
+            <h3>Players currently in the game:</h3>
+            <div class="active-players">
+                <div class="player">
+                    <span class="name">Jacob</span><br>
+                    <span class="status">Points: </span><span class="value">7</span><br>
+                    <span class="status">Status: </span><span class="value isactive">Active</span>
+                </div>
+                <div class="player">
+                    <span class="name">John</span><br>
+                    <span class="status">Points: </span><span class="value">6</span><br>
+                    <span class="status">Status: </span><span class="value isactive">Active</span>
+                </div>
+                <div class="player">
+                    <span class="name">Michael</span><br>
+                    <span class="status">Points: </span><span class="value">1</span><br>
+                    <span class="status">Status: </span><span class="value isactive">Active</span>
+                </div>
+                <div class="player">
+                    <span class="name">Scott</span><br>
+                    <span class="status">Points: </span><span class="value">6</span><br>
+                    <span class="status">Status: </span><span class="value isinactive">Inactive</span>
+                </div>
+            </div>
+            <h3 class="pagedown">Players not currently in the game:</h3>
+            <div class="inactive-players">
+                <div class="player">
+                    <span class="name">Charlie</span><br>
+                    <span class="status">Points: </span><span class="value">2</span><br>
+                    <span class="status">Status: </span><span class="value islost">Forfeit</span>
+                </div>
+                <div class="player">
+                    <span class="name">Zach</span><br>
+                    <span class="status">Points: </span><span class="value">0</span><br>
+                    <span class="status">Status: </span><span class="value isinactive">Waiting to Join</span>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>Jacob Cloward 2018 | <a href="https://www.twitter.com/nyhiljako" target="_blank">@NyhilJako</a></footer>
+</body>
+<!--     <script>
+        // Javascript for Nomic Pickaxe
+        var rules = document.getElementById('rules');
+        var playerRoster = document.getElementById('player-roster');
+        var changelog = document.getElementById('changelog');
+
+
+        function setRules() {
+            playerRoster.style.display = 'none';
+            changelog.style.display = 'none';
+            rules.style.display = 'block';
+        }
+
+        function setPlayerRoster() {
+            rules.style.display = 'none';
+            changelog.style.display = 'none';
+            playerRoster.style.display = 'block';
+        }
+
+        function setChangelog() {
+            console.log("cl");
+            playerRoster.style.display = 'none';
+            rules.style.display = 'none';
+            changelog.style.display = 'block';
+        }
+    </script> -->
+</html>

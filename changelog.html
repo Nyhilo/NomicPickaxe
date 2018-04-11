@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nomic Pickaxe</title>
+    <meta name="description" content="TBA."/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+    <header>
+        <h1>Nomic Pickaxe</h1>
+        <p class="subtitle">The NOMIC ice axe allows the entire rock climbing repertoire to be transferred to ice. Thanks to its adjustable ergonomic handle, it offers multiple grip modes and limits the risk of snagging when switching hands. The ICE pick allows easy penetration in any type of ice, and pulls out easily. The modular head has two removable pick weights to balance the axe and propel it into the ice with an exceptional swing. The NOMIC ice axe can also be equipped with a hammer for placing pitons.</p>
+        <a class="button btn-rules" href="index.html">Rules</a>
+        <a class="button btn-player-roster" href="roster.html">Player Roster</a>
+        <a class="button btn-changelog" href="#">Changelog</a>
+    </header>
+    <main>
+
+        <!-- Changelog -->
+        <section id="changelog">
+            <h2>Changelog</h2>
+            <p>References to this changelog may follow the classical software versioning method.<br>For example, to reference the proposal made on John's Turn 1, someone may reference "Changelog item 4.1." </p>
+            <div class="log-container">
+                <h3>Log:</h3>
+                <ol>
+                    <li id="1">Instated the initial set of Mutable and Immutable rules. Instated the initial set of the 4 players Charlie, Jacob, John, and Michael with 0 points each. </li>
+                    <li id="2">Charlie's Turn 1: 
+                        <ol>
+                            <li id="2.1">Proposal: Rule 211. <span class="murule">The number of votes each player gets each turn is determined by a roll of the dice, utilizing the current dice rolling system defined for the game, defaulting to 1d6 if no other dice system is currently formally defined. </span></li>
+                            <li id="2.2">Proposal accepted as Rule 211 with 3:0 in favor</li>
+                            <li id="2.3">Points gained: 2 | Total points: 2 </li>
+                        </ol>
+                    </li>
+                    <li id="3">Jacob's Turn 1: 
+                        <ol>
+                            <li id="3.1">Proposal: Rule 212 <span class="murule">On a players turn, they may begin a vote to invite a new player into the Nomic. The vote proposal will consist of the person they would like to invite and why they think that person should join. That person is permitted to be invited to the Nomic if their invite proposal receives a unanimous vote. If the vote passes, the person who made the proposal is the one that must expend the effort to invite the person in question.</span></li>
+                            <li id="3.2">Proposal accepted as Rule 212 with 18:0 in favor</li>
+                            <li id="3.3">Points gained: 2 | Total points: 2 </li>
+                            <li id="3.4">Vote initiated to invite Zach Wigle to the game. Proposal ends with 0 votes being cast, due to a misunderstanding of rule 211.  </li>
+                            <li id="3.5">It has been determined that once a turn beings, you roll a die once and that is the total number of votes you get for that whole turn </li>
+                        </ol>
+                    </li>
+                    <li id="4">John's Turn 1
+                        <ol>
+                            <li id="4.1">Proposal, after some community revision: Rule 213. <span class="murule">During any voting phase, players may subtract any number up to 10 points from their personal score and add it to their current voting score. The amount of points transferred between score and vote shall not exceed 10 and this option will not be available unless the player is current positive in points. It is possible to go negative as long as the starting personal score exceeded 0 at the start of the vote. You may not change the amount of added/subtracted points after your initial declaration on a singular vote. You may utilize this system multiple times on different voting proposals in a turn as long as the number subtracted does not exceed 10 in one turn.</span></li>
+                            <li id="4.2">Proposal accepted as Rule 213 with 10:3 in favor</li>
+                            <li id="4.3">Points gained: 6 | Total points: 6 </li>
+                        </ol>
+                    </li>
+                    <li id="5">Michael's Turn 1: 
+                        <ol>
+                            <li id="5.1">Proposal: Rule 214. <span class="murule">"First Bank of Dendy" <br>
+                            This rule explicitly takes precedence over rules 201 and 212 where its mechanics would conflict with them. <br>
+                            Scott Dendy is added to the player roster with zero points, and marked as "Inactive". While he is in the inactive state, his turns are skipped, and his votes on others' proposals are considered null. <br>
+                            When a player rolls to gain points per rule 202, if they gain less than the maximum number of points possible (6 as of this writing), the difference is added to Scott Dendy's score. <br>
+                            If a point gain would cause Scott Dendy's score to reach or exceed 100 points while he is still inactive, the player whose roll caused that will be awarded a dividend of 25 points, and Scott Dendy's score is then reset to zero. This can happen multiple times. <br>
+                            In the extremely unlikely event that Scott Dendy ever posts within this Team, his inactive status will be removed, and he will join gameplay as a normal player with his current point total. This rule will then automatically be repealed. </span></li>
+                            <li id="5.2">Proposal accepted as Rule 214 with 8:0 in favor</li>
+                            <li id="5.3">Scott Dendy has been added to the game, placed in the player roster at the end after Michael with 0 points and the status "Inactive" </li>
+                            <li id="5.4">Charles Saluski has been removed from the game via forfeit, he has been moved in the player roster to a section labeled "Players not in the turn order" with 2 points and the status "Forfeit" </li>
+                            <li id="5.5">Retroactively added the vote results to previous changelog changes </li>
+                            <li id="5.6">Points gained: 1 | Total points: 1 </li>
+                            <li id="5.7">Points gained by Scott: 5 | Total points: 5 </li>
+                        </ol>
+                    </li>
+                    <li id="6">Jacob's Turn 2
+                        <ol>
+                            <li id="6.1">Proposal: Amendment 212a.<span class="murule">At any point during a player's turn, they may propose a vote to invite a new player into the Nomic. It must be made clear that a proposal to invite a new player will be made before any new rules proposals are made. If it is not clear that an invite proposal is going to be made before a rule change is proposed, it will be assumed that no invite proposal is being made. The votes used to vote on this proposal are taken from the pool of votes that players receive on account of rule 211.  <br>
+                            The vote proposal will consist of the person they would like to invite and why they think that person should join. That person is permitted to be invited to the Nomic if their invite proposal receives a unanimous vote. If the vote passes, the person who made the proposal is the one that must expend the effort to invite the person in question. The turns of any other players may take place during this time period, and the invited person will be added to the roster at the moment they accept the invite and are made present in the Gameplay chat. </span></li>
+                            <li id="6.2">Proposal accepted as Rule 212a with 8:0 in favor</li>
+                            <li id="6.3">Approval to invite Zach Wigle accepted with 3:0 in favor </li>
+                            <li id="6.4">Points gained: 5 | Total points: 7 </li>
+                            <li id="6.5">Points gained by Scott: 1 | Total points: 6 </li>
+                        </ol>
+                    </li>
+                    <li id="7">John's Turn 2
+                        <ol>
+                            <li id="7.1">Proposal: Rule 215.<span class="murule">Players may spend 5 votes to create 1 farm. Farms will generate 1 point per turn indefinitely. There are no limits on the number of farms that can be built total but only 1 may be built per turn.</span> </li>
+                            <li id="7.2">It was pointed out by Jacob that Jacob may have broken rules 103 and 101 in his 2nd turn by using his 1 vote to invite Zach Wigle to the game, and not to vote on the proposed rule.</li>
+                            <li id="7.3">It was pointed out by John that choosing apply 0 votes to a proposal may count as voting. It was then pointed out by Jacob that the Judge of this interpretation (as dictated by rule 209) may either be Jacob or Michael, as it is currently John's turn (therefore making Jacob the preceding palyer) but the incident of rule breaking took place on Jacob's turn (making Jacob the preceding player).</li>
+                            <li id="7.4">It was determined by acting Judge Jacob that the acting Judge will be determined in all cases by who's turn it currently is, regardless of which turn the discussed matter took place.</li>
+                            <li id="7.5">It was therefore determined by clarified Judge Jacob that he did not in fact break any rules on his own 2nd turn and also that a player may in fact choose to vote on a proposal as per rule 103 by applying 0 votes to said proposal.</li>
+                            <!-- <li>proposal _ as Rule 215 with #:# in </li>
+                            <li>Points gained: | Total points: </li>
+                            <li>Points gained by Scott:  | Total points: 6</li> -->
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+    <footer>Jacob Cloward 2018 | <a href="https://www.twitter.com/nyhiljako" target="_blank">@NyhilJako</a></footer>
+</body>
+<!--     <script>
+        // Javascript for Nomic Pickaxe
+        var rules = document.getElementById('rules');
+        var playerRoster = document.getElementById('player-roster');
+        var changelog = document.getElementById('changelog');
+
+
+        function setRules() {
+            playerRoster.style.display = 'none';
+            changelog.style.display = 'none';
+            rules.style.display = 'block';
+        }
+
+        function setPlayerRoster() {
+            rules.style.display = 'none';
+            changelog.style.display = 'none';
+            playerRoster.style.display = 'block';
+        }
+
+        function setChangelog() {
+            console.log("cl");
+            playerRoster.style.display = 'none';
+            rules.style.display = 'none';
+            changelog.style.display = 'block';
+        }
+    </script> -->
+</html>
