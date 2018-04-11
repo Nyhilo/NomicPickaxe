@@ -60,7 +60,7 @@ footer {
 }
 
 /* Dynamic Webpaging */
-
+/*
 section#rules {
     display: block;
 }
@@ -72,7 +72,7 @@ section#player-roster {
 section#changelog {
     display: none;
 }
-
+*/
 
 /* Rules CSS */
 div.immutable-rules, div.mutable-rules{

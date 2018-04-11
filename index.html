@@ -12,9 +12,9 @@
     <header>
         <h1>Nomic Pickaxe</h1>
         <p class="subtitle">The NOMIC ice axe allows the entire rock climbing repertoire to be transferred to ice. Thanks to its adjustable ergonomic handle, it offers multiple grip modes and limits the risk of snagging when switching hands. The ICE pick allows easy penetration in any type of ice, and pulls out easily. The modular head has two removable pick weights to balance the axe and propel it into the ice with an exceptional swing. The NOMIC ice axe can also be equipped with a hammer for placing pitons.</p>
-        <button class="button btn-rules" onclick="setRules()">Rules</button>
-        <button class="button btn-player-roster" onclick="setPlayerRoster()">Player Roster</button>
-        <button class="button btn-changelog" onclick="setChangelog()">Changelog</button>
+        <a class="button btn-rules" href="#">Rules</a>
+        <a class="button btn-player-roster" href="roster.html">Player Roster</a>
+        <a class="button btn-changelog" href="changelog.html">Changelog</a>
     </header>
     <main>
 
@@ -24,58 +24,58 @@
             <div class="immutable-rules">
                 <h3>Immutable Rules</h3>
                 <ol start="100">
-                    <li>100. <span class="imrule">The name of this game is "The Official Microsoft Teams™ Nomic feat. Yavapai College".</span></li>
-                    <li>101. <span class="imrule">All players must follow the rules.</span></li>
-                    <li>102. <span class="imrule">A rule change means: The enactment, reinstatement, repeal, or amendment of a mutable rule; or the transition of an mutable rule into an immutable rule and vice versa.</span></li>
-                    <li>103. <span class="imrule">All suggested rule changes must be voted on by everyone.</span></li>
-                    <li>104. <span class="imrule">A rule change will be adopted if and only if it gets the correct number of votes.</span></li>
-                    <li>105. <span class="imrule">Rule changes happen as such:</span>
+                    <li id="100">100. <span class="imrule">The name of this game is "The Official Microsoft Teams™ Nomic feat. Yavapai College".</span></li>
+                    <li id="101">101. <span class="imrule">All players must follow the rules.</span></li>
+                    <li id="102">102. <span class="imrule">A rule change means: The enactment, reinstatement, repeal, or amendment of a mutable rule; or the transition of an mutable rule into an immutable rule and vice versa.</span></li>
+                    <li id="103">103. <span class="imrule">All suggested rule changes must be voted on by everyone.</span></li>
+                    <li id="104">104. <span class="imrule">A rule change will be adopted if and only if it gets the correct number of votes.</span></li>
+                    <li id="105">105. <span class="imrule">Rule changes happen as such:</span>
                         <ul>
                             <li>Step 1) <span class="imrule">The player whose turn it is suggests a new rule in a formal form, stating whether it is meant to be mutable or immutable.</span></li>
                             <li>Step 2) <span class="imrule">The remaining players reply to that message with their definitive votes.</span></li>
                             <li>Step 3) <span class="imrule">Once all players have voted definitively, the vote is declared as having been resolved and the rule proposal is recorded by the scribe.</span></li>
                         </ul>
                     </li>
-                    <li>106. <span class="imrule">The rules and changes are given ordinal numbers which are kept by the scribe. Immutable rules will be kept in the 100s and mutable rules will be kept in the 200s. No rule or change may receive the number of a rule that was proposed before it. If a rule is repealed its number is retired unless reinstated. If a rule is reinstated or amended in any way it will receive a sub letter that increments in alphabetical order (e.x. Rule 223b becomes 223c). </span></li>
-                    <li>107. <span class="imrule">The history of all enactments, repeals, reinstatements, or amendments, as well as points gained or lost, status changes, etc. will be tracked by the scribe in the change log. The current state and turn order of all players will be tracked in the Player Roster. </span></li>
-                    <li>108. <span class="imrule"> If players believe a rule proposal can be improved upon, there is a grace period where players may discuss/debate the proposal before everyone votes on it. The duration of this time is determined by the rule proposer. During this time the player who is proposing the rule may edit their proposal comment thusly. A rule proposal may not be edited after all votes are cast. </span></li>
-                    <li>109. <span class="imrule">The state of affairs which constitutes "winning" may not change from the goal of achieving N points, though the number of points and how to achieve them may of course change as the mutable rules are affected.</span></li>
-                    <li>110. <span class="imrule">Any player may choose to forfeit the game at any time without penalty, though a rule must be instated for them if they wish to rejoin.</span></li>
-                    <li>111. <span class="imrule">No rule may exist that disallows the adoption of new rules.</span></li>
-                    <li>112. <span class="imrule">In the case that a mutable and immutable rule contradicts one another, the immutable rule takes precedence. In the case that two mutable rules contradict one another, the most recently modified rule takes precedence. In the case a rule contradicts itself, it might be determined to do nothing at all. </span></li>
-                    <li>113. <span class="imrule">Players should not edit their comments in order to retroactively change the wording of a rule. The rules are as they are recorded by the scribe and the scribe is to be trusted to record the rules as they have been voted on.</span></li>
+                    <li id="106">106. <span class="imrule">The rules and changes are given ordinal numbers which are kept by the scribe. Immutable rules will be kept in the 100s and mutable rules will be kept in the 200s. No rule or change may receive the number of a rule that was proposed before it. If a rule is repealed its number is retired unless reinstated. If a rule is reinstated or amended in any way it will receive a sub letter that increments in alphabetical order (e.x. Rule 223b becomes 223c). </span></li>
+                    <li id="107">107. <span class="imrule">The history of all enactments, repeals, reinstatements, or amendments, as well as points gained or lost, status changes, etc. will be tracked by the scribe in the change log. The current state and turn order of all players will be tracked in the Player Roster. </span></li>
+                    <li id="108">108. <span class="imrule"> If players believe a rule proposal can be improved upon, there is a grace period where players may discuss/debate the proposal before everyone votes on it. The duration of this time is determined by the rule proposer. During this time the player who is proposing the rule may edit their proposal comment thusly. A rule proposal may not be edited after all votes are cast. </span></li>
+                    <li id="109">109. <span class="imrule">The state of affairs which constitutes "winning" may not change from the goal of achieving N points, though the number of points and how to achieve them may of course change as the mutable rules are affected.</span></li>
+                    <li id="110">110. <span class="imrule">Any player may choose to forfeit the game at any time without penalty, though a rule must be instated for them if they wish to rejoin.</span></li>
+                    <li id="111">111. <span class="imrule">No rule may exist that disallows the adoption of new rules.</span></li>
+                    <li id="112">112. <span class="imrule">In the case that a mutable and immutable rule contradicts one another, the immutable rule takes precedence. In the case that two mutable rules contradict one another, the most recently modified rule takes precedence. In the case a rule contradicts itself, it might be determined to do nothing at all. </span></li>
+                    <li id="113">113. <span class="imrule">Players should not edit their comments in order to retroactively change the wording of a rule. The rules are as they are recorded by the scribe and the scribe is to be trusted to record the rules as they have been voted on.</span></li>
                 </ol>
             </div>
             <div class="mutable-rules">
                 <h3>Mutable Rules</h3>
                 <ol start="200">
-                    <li>200. <span class="murule">The current Scribe is Jacob.</span></li>
-                    <li>201. <span class="murule">Players shall alternate in alphabetical order, taking one whole turn apiece. Turns may not be skipped or passed, and parts of turns may not be omitted. All players begin with zero points.</span></li>
-                    <li>202. <span class="murule">A turn consists of two parts, this this order:</span>
+                    <li id="200">200. <span class="murule">The current Scribe is Jacob.</span></li>
+                    <li id="201">201. <span class="murule">Players shall alternate in alphabetical order, taking one whole turn apiece. Turns may not be skipped or passed, and parts of turns may not be omitted. All players begin with zero points.</span></li>
+                    <li id="202">202. <span class="murule">A turn consists of two parts, this this order:</span>
                         <ul>
                             <li>1) <span class="murule">Propose one rule change, and have it voted on. </span></li>
                             <li>2) <span class="murule">Gain a number of points by rolling a d6 and adding the value to your total. </span></li>
                         </ul>
                     </li>
-                    <li>203. <span class="murule">Dice rolls will be verified by rolling them using a verifiable online service. </span>
+                    <li id="203">203. <span class="murule">Dice rolls will be verified by rolling them using a verifiable online service. </span>
                         <ul class="bulleted">
                             <li class="bulletpointed"><span class="murule">The current service used is the rolz.org room found at <a href="https://rolz.org/dr?room=NomicPickAxe">This Rollz.org room</a>.</span></li>
                             <li class="bulletpointed"><span class="murule">Please set your name using the command /nick yourName </span></li>
                             <li class="bulletpointed"><span class="murule">Roll dice using the format `#xdy #comment`</span></li>
                         </ul>
                     </li>
-                    <li>204. <span class="murule">A rule is adopted if it receives a majority of the vote (more than 50% of voters).</span></li>
-                    <li>205. <span class="murule">Rule changes take effect the moment the Admin declares it to be so.</span></li>
-                    <li>206. <span class="murule">Each player has exactly one vote. </span></li>
-                    <li>207. <span class="murule">A player wins if they achieve 100 (positive) points.</span></li>
-                    <li>208. <span class="murule">At any time there may not be more than 20 mutable rules. </span></li>
-                    <li>209. <span class="murule">If there is a disagreement on the legality of a move or the interpretation of a rule, the player whose turn precedes the current player is the be the final judge.</span></li>
-                    <li>210. <span class="murule">If the rules are changed so that further play is impossible, or if the legality of a move is impossible to determine with finality, or if by the Judge's best reasoning a move appears equally legal and illegal, then the first player who is unable to complete a turn is the winner. This rule takes precedence over every other rule determining the winner.</span></li>
-                    <li>211<span class="murule">The number of votes each player gets each turn is determined by a roll of the dice, utilizing the current dice rolling system defined for the game, defaulting to 1d6 if no other dice system is currently formally defined.</span></li>
-                    <li>212a. <span class="murule">At any point during a player's turn, they may propose a vote to invite a new player into the Nomic. It must be made clear that a proposal to invite a new player will be made before any new rules proposals are made. If it is not clear that an invite proposal is going to be made before a rule change is proposed, it will be assumed that no invite proposal is being made. The votes used to vote on this proposal are taken from the pool of votes that players receive on account of rule 211.<br>
+                    <li id="204">204. <span class="murule">A rule is adopted if it receives a majority of the vote (more than 50% of voters).</span></li>
+                    <li id="205">205. <span class="murule">Rule changes take effect the moment the Admin declares it to be so.</span></li>
+                    <li id="206">206. <span class="murule">Each player has exactly one vote. </span></li>
+                    <li id="207">207. <span class="murule">A player wins if they achieve 100 (positive) points.</span></li>
+                    <li id="208">208. <span class="murule">At any time there may not be more than 20 mutable rules. </span></li>
+                    <li id="209">209. <span class="murule">If there is a disagreement on the legality of a move or the interpretation of a rule, the player whose turn precedes the current player is the be the final judge.</span></li>
+                    <li id="210">210. <span class="murule">If the rules are changed so that further play is impossible, or if the legality of a move is impossible to determine with finality, or if by the Judge's best reasoning a move appears equally legal and illegal, then the first player who is unable to complete a turn is the winner. This rule takes precedence over every other rule determining the winner.</span></li>
+                    <li id="211">211<span class="murule">The number of votes each player gets each turn is determined by a roll of the dice, utilizing the current dice rolling system defined for the game, defaulting to 1d6 if no other dice system is currently formally defined.</span></li>
+                    <li id="212a">212a. <span class="murule">At any point during a player's turn, they may propose a vote to invite a new player into the Nomic. It must be made clear that a proposal to invite a new player will be made before any new rules proposals are made. If it is not clear that an invite proposal is going to be made before a rule change is proposed, it will be assumed that no invite proposal is being made. The votes used to vote on this proposal are taken from the pool of votes that players receive on account of rule 211.<br>
                     The vote proposal will consist of the person they would like to invite and why they think that person should join. That person is permitted to be invited to the Nomic if their invite proposal receives a unanimous vote. If the vote passes, the person who made the proposal is the one that must expend the effort to invite the person in question. The turns of any other players may take place during this time period, and the invited person will be added to the roster at the moment they accept the invite and are made present in the Gameplay chat. </span></li>
-                    <li>213. <span class="murule">During any voting phase, players may subtract any number up to 10 points from their personal score and add it to their current voting score. The amount of points transferred between score and vote shall not exceed 10 and this option will not be available unless the player is current positive in points. It is possible to go negative as long as the starting personal score exceeded 0 at the start of the vote. You may not change the amount of added/subtracted points after your initial declaration on a singular vote. You may utilize this system multiple times on different voting proposals in a turn as long as the number subtracted does not exceed 10 in one turn.</span></li>
-                    <li>214. <span class="murule">&quot;First Bank of Dendy&quot; <br>
+                    <li id="213">213. <span class="murule">During any voting phase, players may subtract any number up to 10 points from their personal score and add it to their current voting score. The amount of points transferred between score and vote shall not exceed 10 and this option will not be available unless the player is current positive in points. It is possible to go negative as long as the starting personal score exceeded 0 at the start of the vote. You may not change the amount of added/subtracted points after your initial declaration on a singular vote. You may utilize this system multiple times on different voting proposals in a turn as long as the number subtracted does not exceed 10 in one turn.</span></li>
+                    <li id="214">214. <span class="murule">&quot;First Bank of Dendy&quot; <br>
                     This rule explicitly takes precedence over rules 201 and 212 where its mechanics would conflict with them. <br>
                     Scott Dendy is added to the player roster with zero points, and marked as "Inactive". While he is in the inactive state, his turns are skipped, and his votes on others' proposals are considered null. <br>
                     When a player rolls to gain points per rule 202, if they gain less than the maximum number of points possible (6 as of this writing), the difference is added to Scott Dendy's score. <br>
@@ -85,127 +85,11 @@
             </div>
         </section>
         
-        <!-- Player Roster -->
-        <section id="player-roster">
-            <h2>Player Roster</h2>
-            
-            <h3>Current round: <span class="value">2</span></h3>
-            <br>
-            <h3>Players currently in the game:</h3>
-            <div class="active-players">
-                <div class="player">
-                    <span class="name">Jacob</span><br>
-                    <span class="status">Points: </span><span class="value">7</span><br>
-                    <span class="status">Status: </span><span class="value isactive">Active</span>
-                </div>
-                <div class="player">
-                    <span class="name">John</span><br>
-                    <span class="status">Points: </span><span class="value">6</span><br>
-                    <span class="status">Status: </span><span class="value isactive">Active</span>
-                </div>
-                <div class="player">
-                    <span class="name">Michael</span><br>
-                    <span class="status">Points: </span><span class="value">1</span><br>
-                    <span class="status">Status: </span><span class="value isactive">Active</span>
-                </div>
-                <div class="player">
-                    <span class="name">Scott</span><br>
-                    <span class="status">Points: </span><span class="value">6</span><br>
-                    <span class="status">Status: </span><span class="value isinactive">Inactive</span>
-                </div>
-            </div>
-            <h3 class="pagedown">Players not currently in the game:</h3>
-            <div class="inactive-players">
-                <div class="player">
-                    <span class="name">Charlie</span><br>
-                    <span class="status">Points: </span><span class="value">2</span><br>
-                    <span class="status">Status: </span><span class="value islost">Forfeit</span>
-                </div>
-                <div class="player">
-                    <span class="name">Zach</span><br>
-                    <span class="status">Points: </span><span class="value">0</span><br>
-                    <span class="status">Status: </span><span class="value isinactive">Waiting to Join</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Changelog -->
-        <section id="changelog">
-            <h2>Changelog</h2>
-            <p>References to this changelog may follow the classical software versioning method.<br>For example, to reference the proposal made on John's Turn 1, someone may reference "Changelog item 4.1." </p>
-            <div class="log-container">
-                <h3>Log:</h3>
-                <ol>
-                    <li>Instated the initial set of Mutable and Immutable rules. Instated the initial set of the 4 players Charlie, Jacob, John, and Michael with 0 points each. </li>
-                    <li>Charlie's Turn 1: 
-                        <ol>
-                            <li>Proposal: Rule 211. <span class="murule">The number of votes each player gets each turn is determined by a roll of the dice, utilizing the current dice rolling system defined for the game, defaulting to 1d6 if no other dice system is currently formally defined. </span></li>
-                            <li>Proposal accepted as Rule 211 with 3:0 in favor</li>
-                            <li>Points gained: 2 | Total points: 2 </li>
-                        </ol>
-                    </li>
-                    <li>Jacob's Turn 1: 
-                        <ol>
-                            <li>Proposal: Rule 212 <span class="murule">On a players turn, they may begin a vote to invite a new player into the Nomic. The vote proposal will consist of the person they would like to invite and why they think that person should join. That person is permitted to be invited to the Nomic if their invite proposal receives a unanimous vote. If the vote passes, the person who made the proposal is the one that must expend the effort to invite the person in question.</span></li>
-                            <li>Proposal accepted as Rule 212 with 18:0 in favor</li>
-                            <li>Points gained: 2 | Total points: 2 </li>
-                            <li>Vote initiated to invite Zach Wigle to the game. Proposal ends with 0 votes being cast, due to a misunderstanding of rule 211.  </li>
-                            <li>It has been determined that once a turn beings, you roll a die once and that is the total number of votes you get for that whole turn </li>
-                        </ol>
-                    </li>
-                    <li>John's Turn 1
-                        <ol>
-                            <li>Proposal, after some community revision: Rule 213. <span class="murule">During any voting phase, players may subtract any number up to 10 points from their personal score and add it to their current voting score. The amount of points transferred between score and vote shall not exceed 10 and this option will not be available unless the player is current positive in points. It is possible to go negative as long as the starting personal score exceeded 0 at the start of the vote. You may not change the amount of added/subtracted points after your initial declaration on a singular vote. You may utilize this system multiple times on different voting proposals in a turn as long as the number subtracted does not exceed 10 in one turn.</span></li>
-                            <li>Proposal accepted as Rule 213 with 10:3 in favor</li>
-                            <li>Points gained: 6 | Total points: 6 </li>
-                        </ol>
-                    </li>
-                    <li>Michael's Turn 1: 
-                        <ol>
-                            <li>Proposal: Rule 214. <span class="murule">"First Bank of Dendy" <br>
-                            This rule explicitly takes precedence over rules 201 and 212 where its mechanics would conflict with them. <br>
-                            Scott Dendy is added to the player roster with zero points, and marked as "Inactive". While he is in the inactive state, his turns are skipped, and his votes on others' proposals are considered null. <br>
-                            When a player rolls to gain points per rule 202, if they gain less than the maximum number of points possible (6 as of this writing), the difference is added to Scott Dendy's score. <br>
-                            If a point gain would cause Scott Dendy's score to reach or exceed 100 points while he is still inactive, the player whose roll caused that will be awarded a dividend of 25 points, and Scott Dendy's score is then reset to zero. This can happen multiple times. <br>
-                            In the extremely unlikely event that Scott Dendy ever posts within this Team, his inactive status will be removed, and he will join gameplay as a normal player with his current point total. This rule will then automatically be repealed. </span></li>
-                            <li>Proposal accepted as Rule 214 with 8:0 in favor</li>
-                            <li>Scott Dendy has been added to the game, placed in the player roster at the end after Michael with 0 points and the status "Inactive" </li>
-                            <li>Charles Saluski has been removed from the game via forfeit, he has been moved in the player roster to a section labeled "Players not in the turn order" with 2 points and the status "Forfeit" </li>
-                            <li>Retroactively added the vote results to previous changelog changes </li>
-                            <li>Points gained: 1 | Total points: 1 </li>
-                            <li>Points gained by Scott: 5 | Total points: 5 </li>
-                        </ol>
-                    </li>
-                    <li>Jacob's Turn 2
-                        <ol>
-                            <li>Proposal: Amendment 212a.<span class="murule">At any point during a player's turn, they may propose a vote to invite a new player into the Nomic. It must be made clear that a proposal to invite a new player will be made before any new rules proposals are made. If it is not clear that an invite proposal is going to be made before a rule change is proposed, it will be assumed that no invite proposal is being made. The votes used to vote on this proposal are taken from the pool of votes that players receive on account of rule 211.  <br>
-                            The vote proposal will consist of the person they would like to invite and why they think that person should join. That person is permitted to be invited to the Nomic if their invite proposal receives a unanimous vote. If the vote passes, the person who made the proposal is the one that must expend the effort to invite the person in question. The turns of any other players may take place during this time period, and the invited person will be added to the roster at the moment they accept the invite and are made present in the Gameplay chat. </span></li>
-                            <li>Proposal accepted as Rule 212a with 8:0 in favor</li>
-                            <li>Approval to invite Zach Wigle accepted with 3:0 in favor </li>
-                            <li>Points gained: 5 | Total points: 7 </li>
-                            <li>Points gained by Scott: 1 | Total points: 6 </li>
-                        </ol>
-                    </li>
-                    <li>John's Turn 2
-                        <ol>
-                            <li>Proposal: Rule 215.<span class="murule">Players may spend 5 votes to create 1 farm. Farms will generate 1 point per turn indefinitely. There are no limits on the number of farms that can be built total but only 1 may be built per turn.</span> </li>
-                            <li>It was pointed out by Jacob that Jacob may have broken rules 103 and 101 in his 2nd turn by using his 1 vote to invite Zach Wigle to the game, and not to vote on the proposed rule.</li>
-                            <li>It was pointed out by John that choosing apply 0 votes to a proposal may count as voting. It was then pointed out by Jacob that the Judge of this interpretation (as dictated by rule 209) may either be Jacob or Michael, as it is currently John's turn (therefore making Jacob the preceding palyer) but the incident of rule breaking took place on Jacob's turn (making Jacob the preceding player).</li>
-                            <li>It was determined by acting Judge Jacob that the acting Judge will be determined in all cases by who's turn it currently is, regardless of which turn the discussed matter took place.</li>
-                            <li>It was therefore determined by clarified Judge Jacob that he did not in fact break any rules on his own 2nd turn and also that a player may in fact choose to vote on a proposal as per rule 103 by applying 0 votes to said proposal.</li>
-                            <!-- <li>proposal _ as Rule 215 with #:# in </li>
-                            <li>Points gained: | Total points: </li>
-                            <li>Points gained by Scott:  | Total points: 6</li> -->
-                        </ol>
-                    </li>
-                </ol>
-            </div>
-        </section>
 
     </main>
     <footer>Jacob Cloward 2018 | <a href="https://www.twitter.com/nyhiljako" target="_blank">@NyhilJako</a></footer>
 </body>
-    <script>
+<!--     <script>
         // Javascript for Nomic Pickaxe
         var rules = document.getElementById('rules');
         var playerRoster = document.getElementById('player-roster');
@@ -230,5 +114,5 @@
             rules.style.display = 'none';
             changelog.style.display = 'block';
         }
-    </script>
+    </script> -->
 </html>
