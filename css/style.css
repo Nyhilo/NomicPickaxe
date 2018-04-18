@@ -1,14 +1,7 @@
 body {
     background-color: #F7F5EF;
-/*    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2013/12/11/191759/ae5fb76ec7d4e6e611258b64cb4ed5fb-1000.jpg);
-        min-height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;*/
-    font-family: 'Monofur', Arial, sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
+    
     margin-top: 2rem;
     position: absolute;
     top: 0px;
@@ -18,180 +11,24 @@ body {
 }
 
 header {
-    color: #333;
     font-size: 2rem;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-}
-
-p.subtitle {
-    padding: 0 10%;
-    font-size: 1rem;
-    text-align: justify;
 }
 
 main {
-    width: 90%;
-    margin: 0 auto;
+    color: #333;
 }
 
 h2 {
     font-size: 200%;
-    text-decoration: underline;
-    margin: .5rem 0;
 }
 
 h3 {
     font-size: 150%;
-    margin: 0 0 0 .5rem;
-}
-
-br {
-    line-height: 2rem;
 }
 
 footer {
     padding-bottom: .25rem;
     clear: both;
-
-}
-
-pre {
-    text-align: center;
-    color: #F7F5EF;
-}
-
-/* Dynamic Webpaging */
-/*
-section#rules {
-    display: block;
-}
-
-section#player-roster {
-    display: none;
-}
-
-section#changelog {
-    display: none;
-}
-*/
-
-/* Rules CSS */
-div.immutable-rules, div.mutable-rules{
-    width: 50%;
-    display: block;
-    float: left;
-}
-
-@media (max-width: 800px) { 
-    div.immutable-rules, div.mutable-rules{
-        width: 100%;
-        display: block;
-        /*float: left;*/
-    }
-}
-
-ol {
-    padding-left: 4rem;
-}
-
-section#rules div ol {
-    padding-left: 2rem;
-    list-style:none;
-}
-
-li {
-    font-size: 100%;
-    margin: .4rem 0;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 1rem;
-}
-
-ul.bulleted {
-    list-style-type: circle;
-}
-
-span.imrule {
-    color: #CA2518;
-}
-
-span.murule {
-    color: #0A67BD;
-}
-
-.bulletpointed {
-    list-style-position: inside;
-/*    padding-left: 1.4rem;    
-*/}
-
-
-/* Player Roster CSS */
-
-div.active-players, div.inactive-players {
-    margin: 1rem 2rem;
-    display:block;
-}
-
-div.player {
-    width: 15rem;
-    height: 3rem;
-    float: left;
-    margin-bottom: 2em;
-}
-
-h3.pagedown {
-    clear: both;
-    margin-top: 10rem;
-}
-
-span.name { font-size: 1.4rem; font-weight: bold; }
-
-span.status, span.value { line-height: 1.4rem; }
-
-div.player br { line-height: 1rem; }
-
-span.status { padding-left: 1rem; }
-
-span.value { font-weight: bold; font-size: 120%; }
-
-span.isactive { color: green; }
-
-span.isinactive { color: blue; }
-
-span.islost { color: darkred; }
-
-
-/* Changelog CSS */
-
-div.log-container {
-    width: 40rem;
-    margin: 0 auto;
-}
-
-
-#changelog ol li ol {
-    padding-left: 1.4rem;
-}
-
-@media (max-width: 46rem) { 
-    div.log-container {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    section#changelog div h3 {
-        margin-left: 0;
-    }
-
-    section#changelog div ol {
-        padding-left: 1.4rem;
-    }
 }
 
 /* Misc */
@@ -212,10 +49,7 @@ div.log-container {
     transition-duration: 0.1s;
 }
 
-/*.button:hover {
-    background-color: #333; 
-    color: #F7F5EF;
-}*/
+/* Buttons */
 
 .button:active {
     -webkit-transition-duration: 0.1s; /* Safari */
@@ -226,9 +60,4 @@ div.log-container {
 
 .button:focus {
     outline:0;
-}
-
-@font-face {
-    font-family: "Monofur";
-    src: url("../fonts/monof55.ttf");
 }
