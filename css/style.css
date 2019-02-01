@@ -1,5 +1,5 @@
 body {
-    background-color: #F7F5EF;
+    background-color: #212529;
 /*    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2013/12/11/191759/ae5fb76ec7d4e6e611258b64cb4ed5fb-1000.jpg);
         min-height: 100%;
     background-repeat: no-repeat;
@@ -8,6 +8,7 @@ body {
     background-size: cover;
     overflow: hidden;*/
     font-family: 'Monofur', Arial, sans-serif;
+    color: #e9ecef;
 
     margin-top: 2rem;
     position: absolute;
@@ -18,7 +19,7 @@ body {
 }
 
 header {
-    color: #333;
+    color: #e9ecef;
     font-size: 2rem;
     text-align: center;
 }
@@ -61,7 +62,7 @@ footer {
 
 pre {
     text-align: center;
-    color: #F7F5EF;
+    color: #212529;
 }
 
 /* Dynamic Webpaging */
@@ -116,11 +117,11 @@ ul.bulleted {
 }
 
 span.imrule {
-    color: #CA2518;
+    color: #f17c7c;
 }
 
 span.murule {
-    color: #0A67BD;
+    color: #72bbff;
 }
 
 .bulletpointed {
@@ -195,10 +196,10 @@ div.log-container {
 /* Misc */
 
 .button {
-    background-color: #F7F5EF;
-    border: solid 1px #333;
+    background-color: #212529;
+    border: solid 1px #e9ecef;
     border-radius: 4px;
-    color: #333;
+    color: #e9ecef;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -218,7 +219,7 @@ div.log-container {
 .button:active {
     -webkit-transition-duration: 0.1s; /* Safari */
     transition-duration: 0.1s;
-    background-color: #ddd;
+    background-color: #adb5bd;
 
 }
 
